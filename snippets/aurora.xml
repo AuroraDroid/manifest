@@ -97,4 +97,5 @@
 
   <!-- Remote Vendor -->
   <project path="vendor/aurora" name="vendor_aurora" revision="14" remote="aurora" />
+  <project path="vendor/lawnchair" name="vendor_lawnchair" revision="14" remote="aurora" />
 </manifest>
