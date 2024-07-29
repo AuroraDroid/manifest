@@ -14,6 +14,11 @@
            fetch="https://github.com/AuroraDroid"
            revision="14" />
 
+  <!-- Project Everest -->
+  <remote name="eve"
+          fetch="https://github.com/ProjectEverest"
+          revision="qpr3" />
+
   <!-- Remote Device -->
   <project path="device/aurora/sepolicy" name="device_aurora_sepolicy" revision="14" remote="aurora" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="14" remote="aurora" />
@@ -99,4 +104,7 @@
   <!-- Remote Vendor -->
   <project path="vendor/aurora" name="vendor_aurora" revision="14" remote="aurora" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" revision="14" remote="aurora" />
+
+  <!-- Remote certification -->
+  <project path="vendor/certification" name="vendor_certification" revision="qpr3" remote="eve" />
 </manifest>
