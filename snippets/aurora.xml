@@ -112,6 +112,8 @@
   <!-- Remote Vendor -->
   <project path="vendor/aurora" name="vendor_aurora" revision="14" remote="aurora" />
   <project path="vendor/gms" name="vendor_gms" revision="14" remote="code" clone-depth="1" />
+  <project path="vendor/support" name="vendor_support" remote="aurora" />
+  <!-- <project path="vendor/lawnchair" name="vendor_lawnchair" remote="aurora" /> -->
 
   <!-- Remote certification -->
   <project path="vendor/certification" name="vendor_certification" revision="14" remote="eve" />
