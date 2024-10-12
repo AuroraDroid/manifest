@@ -8,7 +8,7 @@
   <!-- Gitlab -->
   <remote  name="gitlab"
            fetch="https://gitlab.com/AuroraDroid"
-           revision='14' />
+           revision="14" />
 
   <!-- AuroraDroid -->
   <remote  name="aurora"
