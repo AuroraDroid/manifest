@@ -37,6 +37,6 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" revision="15.0" remote="aurora"  />
   <project path="system/core" name="system_core" groups="pdk" revision="15.0" remote="code" />
   <project path="vendor/lineage" name="vendor_aurora" revision="15.0" remote="aurora"  />
-  <project path="vendor/gms" name="vendor_gms" revision="15.0" remote="code" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" revision="15.0" remote="code" />
 
 </manifest>
