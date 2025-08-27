@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- GitHub -->
+  <remote  name="git"
+           fetch="https://github.com/" />
+
+  <!-- CodeBerg -->
+  <remote  name="code"
+           fetch="https://codeberg.org/AuroraDroid-v2/" 
+           revision="15"/>
+
+  <!-- AuroraDroid -->
+  <remote  name="aurora"
+           fetch="https://github.com/AuroraDroid"
+           revision="15" />
+
+  <project path="android" name="manifest" remote="aurora" />
+
+  <project path="build/make" name="build" groups="pdk,sysui-studio" revision="15" remote="aurora" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" revision="15" remote="aurora" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/lineage/sepolicy" name="device_aurora_sepolicy" revision="15" remote="aurora" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="15" remote="aurora" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="15" remote="code" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="15" remote="aurora" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" revision="15" remote="aurora"  />
+  <project path="system/core" name="system_core" groups="pdk" revision="15" remote="code" />
+  <project path="vendor/lineage" name="vendor_aurora" revision="15" remote="aurora"  />
+  <project path="vendor/gms" name="vendor_gms" revision="15" remote="code" clone-depth="1" />
+
+</manifest>
